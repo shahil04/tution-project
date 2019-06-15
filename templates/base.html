@@ -1,0 +1,146 @@
+{%load static from staticfiles%}
+{%load static%}
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+<!--courses templates-->
+    <link rel="shortcut icon" type="image/png" href="{%  static 'favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+   
+<!---->
+<!--course_details-->
+ <!-- Bootstrap core CSS -->
+ <link href="/static/course_details/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+ <!-- Additional CSS Files -->
+ <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+ <link rel="stylesheet" href="/static/course_details/assets/css/fontawesome.css" />
+ <link rel="stylesheet" href="/static/course_details/assets/css/tooplate-style.css" />
+ <link rel="stylesheet" href="/static/course_details/assets/css/owl.css" />
+ <link rel="stylesheet" href="" />
+
+
+<!--login-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+   
+<!--for signup-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/signup.css">
+
+<!--for header-->
+     <link rel="stylesheet" href="/static/css/header-basic-light.css">
+     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+<!--for footer-->
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/css/Footer-with-map.css">
+
+<!--home urls-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="/static/css/card-gallary.css"> 
+
+<!--customs-->
+  <link rel="stylesheet" href="/static/css/custom.css">
+<!--end custom-->    
+<!--basic -->
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AI WORLD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/base.css">
+    <script src=""></script>
+</head>
+<body>
+    <header class="header-basic-light">
+        <div class="header-limiter">
+            <h1><a href="{% url 'home'%}">Whiznet<span>lab</span></a></h1>
+                <nav>
+                        <a href="{% url 'home'%}"class="selected">Home</a>
+                        <a href="{% url 'training'%}">Training</a>
+                        <a href="{%url 'consultancy'%}">Consulting</a>
+                        <a href="{%url 'products'%}">Products</a>
+                        <a href="{%url 'websites'%}">Websites</a>
+                        <a href="{%url 'contact'%}">Contact</a>
+                        <a href="{% url 'enquiry_create'%}">enquiry</a>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'signup'%}">signup</a>
+                        <a href="{% url 'login' %}">Login</a>
+                        <a href="{% url 'enquiry'%}">enquiry_detail</a>
+                        <a href="{%url 'logout'%}">logout</a>
+                        <a href="{%url 'create_course'%}">Add Courses</a>
+                        {%endif%}
+                </nav>
+        </div>
+    </header>
+<main>
+
+    
+    {%block content%}
+    
+    
+    {%endblock%}
+</main>
+<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="{%url 'home'%}">Courses</a></li><br>
+                        <li><a href="http://www.deepknowledge.ga">Blog</a></li><br>
+                        <li><a href="#">client</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li><br>
+                        <li><a href="{%url 'contact'%}">Contact us</a></li><br>
+                        <li><a href="#">Reviews</a></li><br>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li><br>
+                        <li><a href="#">Help desk</a></li><br>
+                        <li><a href="#">Forums</a></li><br>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li><br>
+                        <li><a href="#">Terms of Use</a></li><br>
+                        <li><a href="#">Privacy Policy</a></li><br>
+                    </ul>
+                </div>
+            </div>
+            <!-- Here we use the Google Embed API to show Google Maps. -->
+            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
+            <iframe id="map-container" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyBdJm9Amm4KALkKlZObWn40dcpRyH119zg" >
+            </iframe>
+        </div>
+        <div class="social-networks">
+            <a href="https://www.twitter.com/shahilrahi3?s=09" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 Copyright reserved by AI WORLD </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+      
+</body>
+</html>>

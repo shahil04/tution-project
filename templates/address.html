@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block title%}Address{%endblock%}
+
+{%block content%}
+{%for obj in object_list%}
+<h1>{{obj.address}}</h1>
+{%endfor%}
+<img src="/static/image/notebook-chill.jpg">    
+{%endblock%}

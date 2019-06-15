@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block title%}home1{%endblock%}
+{%block content%}
+<h1 class="marquee"> <marquee behavior="altenate" scrollamount="8" onmouseout="start()" onmouseover="stop()" direction="left">This site is comming soonn!..</marquee></h1>
+{% if user.is_authenticated %}
+<h1 class="other-text">Hi {{ user.username }}!</h1>
+{%endif%}
+    <section class="gallery-block cards-gallery">
+	  <div class="container">
+	        <div class="row">
+				{%for post in object_list%}
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="{%url 'course_detail' post.pk%}">
+	                		<img src="{{post.image.url}}" alt="Course Image" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="{%url 'course_detail' post.pk%}">{{post.title}}</a></h6>
+							<p class="text-muted card-text">{{post.fee}}</p>
+							<p class="text-muted card-text">{{post.time}}</p>
+							<p class="text-muted card-text">{{post.read_more}}</p>
+
+	                    </div>
+	                </div>
+				</div>
+				{%endfor%}
+	        </div>
+	    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+	</script>
+	
+{%endblock%}

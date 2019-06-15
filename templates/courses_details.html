@@ -1,0 +1,340 @@
+{%extends 'base.html'%}
+{%block content%}
+
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="{{coursesdata.image.url}}" alt="Blugoon by Tooplate" /></a>
+            </div>
+            <div class="author-content">
+              <h4 class="">{{coursesdata.title}}</h4>
+              <span>{{coursesdata.fee}}</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">{{coursesdata.overview_titles}}</a></li>
+                <li><a href="#section2">{{coursesdata.syllabus_title}}</a></li>
+                <li><a href="#section3">{{coursesdata.upcoming_batches.title}}</a></li>
+                <li><a href="#section4">{{coursesdata.training_methodology_title}}</a></li>
+                <li><a href="#section5">{{coursesdata.additional_title1}}</a></li>
+                <li><a href="#section6">{{coursesdata.additional_title2}}</a></li>
+                <li><a href="#section7">{{coursesdata.additional_title3}}</a></li>
+                <li><a href="#section8">contact</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 AIWORLD<br>
+              Design: MD SHA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">         
+            <h2>{{coursesdata.overview_titles}}</h2>
+            <div class="line-dec"></div>
+            <span>Please tell your friends about this course. Thank you.</span>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-text">
+                  <p>{{coursesdata.overview}}</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="right-image">
+                  <img src="{{coursesdata.image.url}}" alt="course_details" />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-4">
+              </div>
+              
+              <div class="col-md-8">
+                <div class="right-text">
+                  <h4>Best for you!</h4>
+                  <p>{{coursesdata.overview}}</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section about-me" data-section="section2">
+          <div class="container">
+         
+            <div class="section-heading">
+            
+              <h2>{{coursesdata.syllabus_title}}</h2>
+              <div class="line-dec"></div>
+            </div>
+            <div class="right-image-post">
+              <div class="row">
+   
+                <div class="col-md-8">
+                  <div class="left-text">
+                    <h4>Modern Syllabus</h4>
+                    <p>{{coursesdata.syllabus_title}}</p>
+                    <p>{{coursesdata.syllabus}}</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="right-image">
+                    <img src="{{coursesdata.image.url}}" alt="Mountain Reflection" />
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <section class="section about-me" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>{{coursesdata.upcoming_batches_title}}</h2>
+            <div class="line-dec"></div>
+            <span>This is my new upcoming_batches.</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <i class="fa fa-area-chart"></i>
+                <h4>{{coursesdata.upcoming_batches}}</h4>
+                <p>This is our new batch time ({{coursesdata.upcoming_batches}}) for {{coursesdata.title}}.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-me" data-section="section4">
+          <div class="container">
+         
+              <div class="section-heading">
+              
+                <h2>{{coursesdata.training_methodology_title}}</h2>
+                <div class="line-dec"></div>
+              </div>
+              <div class="right-image-post">
+                <div class="row">
+     
+                  <div class="col-md-8">
+                    <div class="left-text">
+                      <p>{{coursesdata.training_methodology}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="section my-work" data-section="section5">
+          <div class="container">
+         
+              <div class="section-heading">
+              
+                <h2>{{coursesdata.additional_title1}}</h2>
+                <div class="line-dec"></div>
+              </div>
+              <div class="right-image-post">
+                <div class="row">
+     
+                  <div class="col-md-8">
+                    <div class="left-text">
+                      <p>{{coursesdata.additional_topic1}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="section my-work" data-section="section6">
+          <div class="container">
+         
+              <div class="section-heading">
+              
+                <h2>{{coursesdata.additional_title2}}</h2>
+                <div class="line-dec"></div>
+              </div>
+              <div class="right-image-post">
+                <div class="row">
+     
+                  <div class="col-md-8">
+                    <div class="left-text">
+                      <p>{{coursesdata.additional_topic2}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="section my-work" data-section="section7">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{coursesdata.additional_title3}}</h2>
+                <div class="line-dec"></div>
+            </div>
+              <div class="right-image-post">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="left-text">
+                      <p>{{coursesdata.additional_topic3}}</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="right-image">
+                      <img src="{{coursesdata.image.url}}" alt="Mountain Reflection" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="section contact-me" data-section="section8">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <div class="line-dec"></div>
+            <span>Aenean a consectetur mi, sit amet consequat velit. Mauris vitae nunc viverra, mattis arcu quis, vestibulum eros. </span>
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="{%url 'contact'%}" method="post">
+                  {%csrf_token%}
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control"
+                          id="name" placeholder="Your name..." required="" />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control"
+                          id="email" placeholder="Your email..." required=""  />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="phone_no" type="text" class="form-control" 
+                          id="subject" placeholder="phone_no..." required="" />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control"
+                          id="message" placeholder="Your message..." required="" ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/course_details/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/course_details/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/static/course_details/assets/js/isotope.min.js"></script>
+    <script src="/static/course_details/assets/js/owl-carousel.js"></script>
+    <script src="/static/course_details/assets/js/lightbox.js"></script>
+    <script src="/static/course_details/assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+{%endblock%}

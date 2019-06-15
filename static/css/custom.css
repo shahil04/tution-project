@@ -1,0 +1,73 @@
+.mybox{
+    border: 10px;
+    border-width: 10px;
+    border-color: rgb(2, 0, 0);
+    color: blanchedalmond;
+    background-color: #a9e497;
+    border-radius: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    color:blue;
+}
+
+.sizes{
+    font-size:60px;
+}
+
+.font-color{
+    color: black;
+
+}
+.url-box{
+    border: 10px;
+    border-width: 10px;
+    border-color: rgb(2, 0, 0);
+    color: blanchedalmond;
+    background-color: #edf0ec;
+    border-radius: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform:capitalize;
+    font-size:2rem;
+    color:black;
+}
+
+
+.backgrounds{
+    background-color: rgb(6, 81, 151);
+    color:white;
+    font-weight:bold; 
+
+}
+.other-text{
+    color:black;
+    background-color:rgb(240, 241, 241);
+}
+.box-margin{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left:20%;
+    margin-right:20%; 
+
+}
+.heading-box{
+    padding-bottom:0px;
+    padding-top: 0px;
+    margin-left:20%;
+    margin-right:20%; 
+}
+
+.head-box{
+    padding-bottom:0px;
+    padding-top: 5px;
+    margin-bottom:0%;
+    margin-left:20%;
+    margin-right:20%;
+    
+    background-color:  #a5e691;
+    color:black;
+    font-weight:bold; 
+}

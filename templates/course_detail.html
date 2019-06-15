@@ -1,0 +1,81 @@
+{%extends 'base.html'%}
+{%block  content%}
+
+<div class="mybox box-margin"><a href="{%url 'home'%}">home/</a>{{coursesdata.title}}</div>
+ 
+<div class="row box-margin">
+    <div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card border-0 transform-on-hover">
+                <a class="lightbox" href="#">
+                    <img src="{{coursesdata.image.url}}" alt="Course Image" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h6><a href="#">{{coursesdata.title}}</a></h6>
+                    <p class="text-muted card-text">{{coursesdata.read_more}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+          <h1>hii</h1>
+            <div> 
+                <div><h1 class="heading-box other-text">{{coursesdata.title}}</h1></div>
+                <div class="url-box"><a href="{%url 'home'%}">home/</a>{{coursesdata.title}}</div>
+                <div class="">
+                   <h1 class="head-box">{{coursesdata.read_more}}</h1>
+                    <div class="other-text heading-box">
+                       <p>{{coursesdata.read_more}}</p>
+                    </div>
+                    
+                    <div class="other-text heading-box">
+                        <p>{{coursesdata.title}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.time}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.fee}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.read_more}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.add_time}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.overview}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.syllabus}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.training_methodology}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.upcoming_batches}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.additional_topic1}}</p>
+                     </div>
+
+                     <div class="other-text heading-box">
+                        <p>{{coursesdata.additional_topic2}}</p>
+                     </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}

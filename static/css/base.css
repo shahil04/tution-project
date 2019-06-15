@@ -1,0 +1,12 @@
+
+h1{
+    color:red;
+}
+main{
+    background-image: url("/static/css/background.jpg")
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: alicebluel;
+    font-size: 30px;
+}

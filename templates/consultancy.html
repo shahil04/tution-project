@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block title%}{{training}}{%endblock%}
+{%block content%}
+<div> 
+     <div>
+        <h1 class="heading-box other-text"><u>IT Consultancy Services</u></h1>
+    </div>
+    <div class="url-box box-margin"><a href="{%url 'home'%}">home/</a>Consultancy</div>
+    {%for obj in object_list%}
+    <div class="">
+        <h1 class="head-box">{{obj.title_topic}}</h1>
+        <div class="heading-box">
+            <p>{{obj.about}}</p>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+{%endblock%}
