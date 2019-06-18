@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView,DetailView
 from django.views.generic.edit import CreateView
-from .models import Products,Address,Train
+from .models import Products,Train
 from .models import Consultancy,Contact,Website_services,Features_add
 from django.urls import reverse_lazy
 
@@ -10,7 +10,6 @@ class Products(ListView):
     template_name='products.html'
 
 class Address(ListView):
-    model=Address
     template_name='address.html'
   
 class Training(ListView):

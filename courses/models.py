@@ -9,35 +9,21 @@ class Coursesdata(models.Model):
     image=models.FileField(upload_to='image')
     time=models.CharField(max_length=250)
     fee=models.CharField(max_length=250)
-    read_more=models.CharField(max_length=500)
     add_date=models.DateField(auto_now=True,null=True)
-    overview_titles=models.CharField(max_length=250)
     overview=models.TextField()
-  #  overview1=models.TextField()
-    syllabus_title=models.CharField(max_length=250)
     syllabus=models.TextField()
-    training_methodology_title=models.CharField(max_length=250)
     training_methodology=models.TextField()
-    upcoming_batches_title=models.CharField(max_length=250)
     upcoming_batches=models.TextField(blank=True)
-    additional_title1=models.CharField(max_length=250,null=True)
+    additional_title1=models.CharField(max_length=250,null=True,blank=True)
     additional_topic1=models.TextField(blank=True)
-    additional_title2=models.CharField(max_length=250)
+    additional_title2=models.CharField(max_length=250,blank=True)
     additional_topic2=models.TextField(blank=True)
-    additional_title3=models.CharField(max_length=250)
-    additional_topic3=models.TextField(blank=True)
-    
-
-
     
     class Meta:
         ordering=['-add_date']
         
-
-
     def __str__(self):
         return self.title
-
 
     def get_absolute_url(self):
         return reverse('course_detail',args=[str(self.id)])
@@ -64,4 +50,8 @@ class Detail_course(models.Model):
 
     def get_absolute_url(self):
         return reverse('course_detail',args=[str(self.id)])
+
+    def __str__(self):
+        return self.title
+
 

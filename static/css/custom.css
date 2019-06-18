@@ -41,6 +41,10 @@
     font-weight:bold; 
 
 }
+.black{
+    color: black;
+}
+
 .other-text{
     color:black;
     background-color:rgb(240, 241, 241);

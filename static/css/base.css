@@ -2,8 +2,11 @@
 h1{
     color:red;
 }
+.black{
+    color: black;
+}
 main{
-    background-image: url("/static/css/background.jpg")
+    background-image: url("/static/css/background.jpg") no-repeat center center fixed;
 }
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
